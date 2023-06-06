@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Text Input Control</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+        <form>
+            First name: <input type="text" name="first_name" />
+            <br><br>
+            Last name: <input type="text" name="last_name" />
+        </form>
+        <br><br>
+        <form>
+            User ID : <input type="text" name="user_id" />
+            <br><br>
+            Password: <input type="password" name="password" />
+        </form>
+        <br><br>
+        <p>Multiple-Line Input Control</p>
+        <form>
+            Description: <br />
+            <textarea rows="5" cols="50" name="description" placeholder="Enter description here"></textarea>
+        </form>
+        <br><br>
+        <p>Checkbox Control</p>
+        <form>
+            <input type="checkbox" name="maths" value="on"> Maths
+            <input type="checkbox" name="physics" value="on"> Physics
+        </form>
+        <br><br>
+        <p>Radio Button Control</p>
+        <form>
+            <input type="radio" name="subject" value="maths"> Maths
+            <input type="radio" name="subject" value="physics"> Physics
+            <input type="submit" value="Submit" />
+        </form>
+        <br><br>
+        <p>Select Box Control</p>
+        <form>
+            <select name="dropdown">
+                <option value="Maths" selected>Maths</option>
+                <option value="Physics">Physics<option>
+            </select>
+        </form>
+        <br><br>
+        <p>File Upload Box</p>
+        <form>
+            <input type="file" name="fileupload" accept="image/*" />
+        </form>
+        <br><br>
+        <p>File Upload Box-Button Controls</p>
+        <form>
+            <input type="submit" name="submit" value="submit" />
+            <input type="reset" name="reset" value="reset" />
+            <input type="button" name="ok" value="OK" />
+            <br><br>
+            <input type="image" name="imagebutton" src="img/wallpaperflare.com_wallpaper (24).jpg" id="link-img" />
+        </form>
+        <br><br>
+        <p>File Upload-Hidden Form Controls</p>
+        <div>This is page 10</div><br>
+        <form>
+            <input type="hidden name" name="pagename" value="10" />
+            <input type="submit" name="submit" value="submit" />
+            <input type="reset" name="reset" value="reset" />
+        </form>
+        <br><br>
+        <form action="/cgi-bin/dropdown.cgi" method="post">
+            <select name="dropdown">
+            <option value="Data Structures" selected>Data Structures</option>
+            <option value="Data Mining">Data Mining</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

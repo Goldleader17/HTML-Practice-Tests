@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Tags</title>
+        <link rel="stylesheet" href="style.css" media="all">
+        <style type="text/css" media="all">
+            h3{
+                color: brown;
+            }
+        </style>
+        <p>HTML base Tag</p>
+        <base href="http:www.cobratate.com" />
+        <meta name="keywords" content="HTML, meta tag, metadata" />
+        <meta name="description" content="Important html tags used in front-end development" />
+        <!--<meta http-equiv="refresh" content="10" />-->
+    </head>
+
+    <body style="background-color: grey;">
+        <!--<aside>-->
+            <h3 style="color: brown;">Java History</h3>
+            <p>Java is a programming language developed by James Gosling</p><br>
+        <!--</aside>-->
+        <p>Click on Play button...</p>
+        <p>(Song: Feeling by Juice WRLD)</p>
+        <audio controls>
+            <source src="media/Juice WRLD - Feeling (Official Audio).mp3" type="audio/mp3">
+        </audio><br>
+
+        HTML: <br><br><img src="img/wallpaperflare.com_wallpaper (24).jpg" width="50%" /><br><br>
+
+        <!--<p>HTML bdo Tag</p>-->
+
+        <bdo dir="rtl"> Here's some English embedded in text in another language 
+        requiring a right-to-left presentation.</bdo><br>
+
+        <p>Tutorialspoint list of tuorials</p>
+        <ul style="list-style: inside square;">
+            <li>Web: HTML</li>
+            <li>Programming: Java</li>
+            <li>Scripting: VBScript</li>
+            <li>Mobile: Android</li>
+        </ul><br>
+
+        <!--<p>HTML blockquote Tag</p>-->
+        <blockquote>Browsers generally render blockquote text as indented text. If your 
+        quoted text needs to display within a non-quoted paragraph, you should use the 
+        HTML q tag. Most browsers surround q text with quotation marks.</blockquote>
+        <br />
+        <q>Browsers generally render blockquote text as indented text. If your quoted 
+        text needs to display within a non-quoted paragraph, you should use the HTML q 
+        tag. Most browsers surround q text with quotation marks.</q>
+        <br>
+
+        <!--Canvas Tag-->
+        <canvas id="newCanvas">Your browser does not support canvas tag.</canvas>
+        <script>
+        var c=document.getElementById('newCanvas');
+        var ctx=c.getContext('2d');
+        ctx.fillStyle='#00FD00';
+        ctx.fillRect(0,0,200,60);
+        </script>
+
+        <!--Caption Tag-->
+        <h2>Cricketers List</h2>
+        <table width="100%">
+            <caption>Indian Cricketers</caption>
+              <th>Name</th>
+              <tr><td>Sachin Tendulkar</td></tr>
+              <tr><td>M S Dhoni</td></tr>
+              <tr><td>Suresh Raina</td></tr>
+              <tr><td>Virat Kohli</td></tr>
+        </table>
+        <br>
+
+        <!--HTML cite Tag-->
+        <p>The learning content can be referred from <cite>Data Structures & Algorithms 
+        in Java</cite><p>
+        <br>
+
+        <!--HTML Datalist-->    
+        <input list="tutorials" />
+        <datalist id="tutorials">
+            <option value="Java"></option>
+            <option value="ASP"></option>
+            <option value="PHP"></option>
+            <option value="Ruby"></option>
+            <option value="jQuery"></option>
+        </datalist>
+        <br>
+
+        <!--HTML del Tag-->
+        <p>Following text is deleted using <del>HTML del tag</del></p>
+        <br>
+
+        <!--HTML dialog tag-->
+        <dialog open>this will be shown in a dialog</dialog>
+        <br />
+
+        <!--HTML directory tag-->
+        <dir>
+            <li>dir</li>
+            <li>menu</li>
+            <li>ul</li>
+        </dir>
+
+        <!--HTML fieldset tag-->
+        <form>
+            <fieldset>
+             <legend>Details</legend>
+             Student Name: <input type="text"><br /><br>
+             MCA Subjects:<input type="text"><br /><br>
+             Course Link:<input type="url" name="websitelink">
+            </fieldset>
+        </form>
+
+        <!--HTML figcaption tag-->
+        <figure>
+            <img src="wallpaperflare.com_wallpaper (24).jpg" width="50%"/>
+               <figcaption>Jyanme Girl</figcaption>
+        </figure>
+        <br>
+
+        <!--HTML horizontal tag-->
+        <p>This text will be followed by a horizontal line <hr /></p>
+        <br>
+
+        <!--HTML keyboard input tag-->
+        <p>Open previously closed tab using 
+        <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd>
+        <br><br>
+
+        <!--HTML keygen tag-->
+        <keygen name="random_key" challenge="0987654321">
+        <input name="firstname" value="first name">
+        <br><br>
+
+        <!--HTML label tag-->
+        <label for="email">EMAIL-ID:
+            <br /> 
+            <input type="email" value="" name="emailid"
+            size="30" placeholder="Enter a valid email address">
+            <br /><br />
+        <label for="phone">PHONE NO:
+            <br /> 
+            <input type="text" value="" name="phno"
+            size="30" maxlength="10" placeholder="Enter a valid phone number" pattern="[0-
+            9]{10}">
+            <br /><br />
+
+        <!--HTML main tag-->
+        <main>
+            <h1>Learning</h1>
+               <p>Learn to gain experience and try to share your knowledge with others.</p>
+            <article>
+            <h3>Web Development Tutorials</h3>
+               <p>Consist of CSS, HTML, and PHP tutorials for 2nd Semester exams.</p>
+            </article>
+            <article>
+            <h3>Academic Tutorials</h3>
+               <p>Consist of Computer Fundamental, Computer Network tutorials for 1st 
+               Semester exams.</p>
+            </article>
+        </main>
+        <nobr>
+            This is a very long sequence of text that is
+            forced to be on a single line, even if doing so causes
+            <wbr />
+            the browser to extend the document window beyond the
+            size of the viewing pane and the poor user must scroll right
+            <wbr />
+            to read the entire line.
+        </nobr>
+        <br><br>
+
+        <!--HTML output tag-->
+        <form
+        oninput="sumresult.value=parseInt(z1.value)+parseInt(z2.value)+parseInt(z3.value)">
+        <input type="range" name="z1" value="0" /> +
+        <input type="number" name="z2" value="20" /> +
+        <input type="number" name="z3" value="40" /><br />
+        The output is: <output name="sumresult"></output>
+        <br><br>
+
+        <!--HTML progress tag-->
+        <h1>Student's Intelligence level</h1>
+        <progress value="20" max="100">
+        <br><br>
+        
+    </body>
+</html>
